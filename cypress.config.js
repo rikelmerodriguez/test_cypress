@@ -1,8 +1,9 @@
-module.exports = {
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://agenda-contatos-react.vercel.app',
     setupNodeEvents(on, config) {
-      // Implemente os event listeners aqui, se necessário
+      // implement node event listeners here
     },
   },
-};
+});
